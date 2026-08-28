@@ -49,6 +49,64 @@
 }
 </script>
 
+<!-- FAQ structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are you licensed and insured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We carry general liability insurance, and we're glad to share full license and insurance details directly once we've discussed your project. We handle that one-on-one rather than posting it publicly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is this different from just hiring a contractor directly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The inspection and estimate come first, independently, before any contractor is chosen — so you're working from a real baseline instead of a single contractor's opening bid. We're not paid by the contractor, so there's no incentive to inflate scope."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I'm not happy with the finished work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every engagement ends with an independent audit and quality assurance sign-off before the project — and final payment — closes out. Work gets checked against the original scope and spec, not just eyeballed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does this cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every project is scoped individually based on the property and the work involved. You'll get a clear, itemized estimate before anything begins — no obligation to move forward after the initial inspection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I pay Inspired Minds and the contractor separately?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the service. For consulting work — inspections, estimates, project management, or audits — you pay Inspired Minds directly. For general contracting projects Inspired Minds takes on and delivers end to end, it's a single contract."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast do you respond to inquiries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reach out by phone, email, or the form on this site — we follow up to schedule a consultation as quickly as the project allows."
+      }
+    }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -255,10 +313,35 @@
   .form-note{font-size:12.5px; color:var(--slate); margin-top:14px;}
   .form-success{display:none; background:#EFF7EF; border:1px solid #BFE0BF; color:#2C5E2C; padding:14px 16px; font-size:14px; margin-bottom:16px;}
 
+  /* FAQ */
+  .faq{background:#fff;}
+  .faq-list{max-width:760px;}
+  .faq-item{border-top:1px solid var(--line);}
+  .faq-item:last-child{border-bottom:1px solid var(--line);}
+  .faq-item summary{
+    list-style:none; cursor:pointer; padding:22px 4px; display:flex; justify-content:space-between; align-items:center; gap:20px;
+    font-family:var(--display); font-weight:600; font-size:16.5px; color:var(--navy);
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary .faq-toggle{
+    font-family:var(--mono); font-size:18px; color:var(--copper-dark); flex-shrink:0; transition:transform .15s ease;
+  }
+  .faq-item[open] summary .faq-toggle{transform:rotate(45deg);}
+  .faq-item .faq-a{padding:0 4px 24px; max-width:64ch; color:var(--slate); font-size:15px; line-height:1.6;}
+
+  /* Social row */
+  .social-row{display:flex; gap:14px; align-items:center;}
+  .social-row a{
+    width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    border:1px solid rgba(255,255,255,0.25); color:rgba(255,255,255,0.85);
+  }
+  .social-row a:hover{border-color:#fff; color:#fff;}
+  .social-row svg{width:16px; height:16px; fill:currentColor;}
+
   footer{background:var(--navy); color:rgba(255,255,255,0.6); padding:44px 0 32px;}
   .footer-inner{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:18px;}
   .footer-inner .brand-name{color:#fff;}
-  .footer-links{display:flex; gap:26px; font-size:13.5px;}
+  .footer-links{display:flex; gap:26px; align-items:center; font-size:13.5px;}
   .footer-links a:hover{color:#fff;}
   .footer-bottom{margin-top:28px; padding-top:22px; border-top:1px solid rgba(255,255,255,0.1); font-size:12.5px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;}
 
@@ -274,6 +357,9 @@
     .trust-grid{grid-template-columns:1fr 1fr; row-gap:28px;}
     .contact-grid{grid-template-columns:1fr;}
     .form-row{grid-template-columns:1fr;}
+  }
+  @media (max-width: 560px){
+    .faq-item summary{font-size:15px;}
   }
   @media (max-width: 520px){
     .service-grid{grid-template-columns:1fr;}
@@ -320,6 +406,7 @@
       <a href="#process">Process</a>
       <a href="#audiences">Who we serve</a>
       <a href="#areas">Service areas</a>
+      <a href="#faq">FAQ</a>
       <a href="blog/index.html">Field Notes</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -554,6 +641,41 @@
         <h4>Verified before sign-off</h4>
         <p>A final audit and QA pass before the project — and the payment — closes out.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common questions</span>
+      <h2>What homeowners ask before they call.</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Are you licensed and insured?<span class="faq-toggle">+</span></summary>
+        <div class="faq-a">We carry general liability insurance, and we're glad to share full license and insurance details directly once we've discussed your project. We handle that one-on-one rather than posting it publicly.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How is this different from just hiring a contractor directly?<span class="faq-toggle">+</span></summary>
+        <div class="faq-a">The inspection and estimate come first, independently, before any contractor is chosen — so you're working from a real baseline instead of a single contractor's opening bid. We're not paid by the contractor, so there's no incentive to inflate scope.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What if I'm not happy with the finished work?<span class="faq-toggle">+</span></summary>
+        <div class="faq-a">Every engagement ends with an independent audit and quality assurance sign-off before the project — and final payment — closes out. Work gets checked against the original scope and spec, not just eyeballed.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How much does this cost?<span class="faq-toggle">+</span></summary>
+        <div class="faq-a">Every project is scoped individually based on the property and the work involved. You'll get a clear, itemized estimate before anything begins — no obligation to move forward after the initial inspection.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do I pay Inspired Minds and the contractor separately?<span class="faq-toggle">+</span></summary>
+        <div class="faq-a">It depends on the service. For consulting work — inspections, estimates, project management, or audits — you pay Inspired Minds directly. For general contracting projects Inspired Minds takes on and delivers end to end, it's a single contract.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How fast do you respond to inquiries?<span class="faq-toggle">+</span></summary>
+        <div class="faq-a">Reach out by phone, email, or the form on this site — we follow up to schedule a consultation as quickly as the project allows.</div>
+      </details>
     </div>
   </div>
 </section>
