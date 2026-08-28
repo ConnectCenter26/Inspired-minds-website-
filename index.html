@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inspired Minds of Construction LLC | Residential Repair Consulting — Parker, Highlands Ranch, Littleton, Lone Tree CO</title>
+<meta name="description" content="Turnkey residential home repair consulting for homeowners and contractors. Inspections, estimates, project management, contractor matching, and quality assurance across Parker, Highlands Ranch, Littleton, and Lone Tree, CO.">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="canonical" href="https://inspiredmindsconstruction.co/">
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://inspiredmindsconstruction.co/">
+<meta property="og:title" content="Inspired Minds of Construction LLC | Residential Repair Consulting">
+<meta property="og:description" content="Turnkey home repair consulting for homeowners and contractors — inspections, estimates, project management, contractor matching, audits, and QA in Parker, Highlands Ranch, Littleton, and Lone Tree, CO.">
+<meta property="og:image" content="https://inspiredmindsconstruction.co/logo.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Inspired Minds of Construction LLC">
+<meta name="twitter:description" content="From concept to completion — residential repair consulting for homeowners and contractors.">
+<meta name="twitter:image" content="https://inspiredmindsconstruction.co/logo.png">
+
+<!-- Local business structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "Inspired Minds of Construction LLC",
+  "slogan": "From Concept to Completion",
+  "url": "https://inspiredmindsconstruction.co/",
+  "telephone": "+1-303-204-2710",
+  "email": "imc2.connect@gmail.com",
+  "image": "https://inspiredmindsconstruction.co/logo.png",
+  "areaServed": [
+    {"@type": "City", "name": "Parker, CO"},
+    {"@type": "City", "name": "Highlands Ranch, CO"},
+    {"@type": "City", "name": "Littleton, CO"},
+    {"@type": "City", "name": "Lone Tree, CO"}
+  ],
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Home Inspections"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Repair Estimates"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Project Management"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Contractor Vetting & Matching"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "General Contracting"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Project Audits"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Quality Assurance"}}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#161D28;
+    --blue:#C89B3C;
+    --pale:#F7F5F0;
+    --white:#FFFFFF;
+    --charcoal:#242B33;
+    --slate:#5C6673;
+    --copper:#C89B3C;
+    --copper-dark:#A67C2E;
+    --line:#E4DFD4;
+    --radius:2px;
+    --display: 'Space Grotesk', sans-serif;
+    --body: 'IBM Plex Sans', sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--body);
+    color:var(--charcoal);
+    background:var(--white);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit; text-decoration:none;}
+  img,svg{display:block; max-width:100%;}
+  .wrap{max-width:1140px; margin:0 auto; padding:0 24px;}
+  h1,h2,h3{font-family:var(--display); font-weight:600; letter-spacing:-0.01em; color:var(--navy);}
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--copper-dark);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px; height:1px; background:var(--copper-dark);
+    display:inline-block;
+  }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:var(--body); font-weight:600; font-size:15px;
+    padding:13px 24px; border-radius:var(--radius);
+    border:1.5px solid transparent; cursor:pointer;
+    transition:transform .15s ease, background .15s ease, border-color .15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);}
+  .btn-primary{background:var(--copper); color:var(--white);}
+  .btn-primary:hover{background:var(--copper-dark);}
+  .btn-outline{border-color:rgba(255,255,255,0.4); color:var(--white);}
+  .btn-outline:hover{border-color:#fff; background:rgba(255,255,255,0.08);}
+  .btn-outline-navy{border-color:var(--navy); color:var(--navy);}
+  .btn-outline-navy:hover{background:var(--navy); color:#fff;}
+
+  /* Header */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(14,42,71,0.97);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+  }
+  .nav{display:flex; align-items:center; justify-content:space-between; height:76px;}
+  .brand{display:flex; align-items:center; gap:12px; color:#fff;}
+  .brand-logo{
+    height:52px; width:auto; background:#fff; padding:6px 12px;
+    border-radius:3px; flex-shrink:0;
+  }
+  .brand-name{font-family:var(--display); font-weight:600; font-size:17px; line-height:1.2;}
+  .brand-name span{display:block; font-family:var(--mono); font-weight:400; font-size:10px; letter-spacing:0.1em; color:rgba(255,255,255,0.55); text-transform:uppercase; margin-top:2px;}
+  nav.links{display:flex; gap:32px; align-items:center;}
+  nav.links a{color:rgba(255,255,255,0.82); font-size:14.5px; font-weight:500;}
+  nav.links a:hover{color:#fff;}
+  .nav-cta{display:flex; align-items:center; gap:18px;}
+  .nav-phone{color:#fff; font-family:var(--mono); font-size:14px;}
+  .menu-toggle{display:none; background:none; border:none; color:#fff; font-size:26px; cursor:pointer;}
+
+  /* Hero */
+  .hero{
+    position:relative; overflow:hidden;
+    background:var(--navy);
+    color:#fff;
+    padding:100px 0 80px;
+  }
+  .blueprint-grid{
+    position:absolute; inset:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.055) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.055) 1px, transparent 1px);
+    background-size:42px 42px;
+    mask-image:radial-gradient(ellipse 80% 60% at 70% 30%, black 40%, transparent 100%);
+  }
+  .hero-inner{position:relative; z-index:2; display:grid; grid-template-columns:1.15fr 0.85fr; gap:60px; align-items:center;}
+  .hero h1{color:#fff; font-size:clamp(34px,4.4vw,54px); line-height:1.08; margin:18px 0 22px; max-width:14ch;}
+  .hero p.lead{color:rgba(255,255,255,0.78); font-size:17.5px; max-width:46ch; margin-bottom:34px;}
+  .hero-ctas{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:40px;}
+  .hero-stats{display:flex; gap:36px; padding-top:28px; border-top:1px solid rgba(255,255,255,0.14); flex-wrap:wrap;}
+  .stat-num{font-family:var(--display); font-size:26px; font-weight:700; color:#fff;}
+  .stat-label{font-family:var(--mono); font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:rgba(255,255,255,0.55); margin-top:4px;}
+
+  /* Hero scope diagram */
+  .scope-card{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.14);
+    padding:26px;
+    position:relative;
+  }
+  .scope-card::before{
+    content:"FIG. 01 — PROJECT SCOPE";
+    position:absolute; top:-11px; left:20px; background:var(--navy);
+    padding:0 8px; font-family:var(--mono); font-size:10px; letter-spacing:0.1em; color:var(--copper);
+  }
+  .scope-row{display:flex; align-items:flex-start; gap:14px; padding:12px 0; border-bottom:1px dashed rgba(255,255,255,0.14);}
+  .scope-row:last-child{border-bottom:none;}
+  .scope-tick{font-family:var(--mono); font-size:11px; color:var(--copper); padding-top:2px; width:26px; flex-shrink:0;}
+  .scope-text{font-size:14px; color:rgba(255,255,255,0.85);}
+  .scope-text b{color:#fff; font-weight:600;}
+
+  section{padding:88px 0;}
+  .section-head{max-width:640px; margin-bottom:52px;}
+  .section-head h2{font-size:clamp(26px,3vw,36px); margin-top:14px; line-height:1.15;}
+  .section-head p{color:var(--slate); font-size:16px; margin-top:14px;}
+
+  /* Services */
+  .services{background:var(--pale);}
+  .service-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
+  .service-card{background:#fff; padding:32px 28px; display:flex; flex-direction:column; gap:14px;}
+  .service-idx{font-family:var(--mono); font-size:12px; color:var(--copper-dark);}
+  .service-card h3{font-size:18px; color:var(--navy);}
+  .service-card p{font-size:14.5px; color:var(--slate);}
+
+  /* Process */
+  .process-track{position:relative; margin-top:20px;}
+  .process-line{position:absolute; top:19px; left:0; right:0; height:1px; background:var(--line); z-index:0;}
+  .process-steps{display:grid; grid-template-columns:repeat(6,1fr); gap:18px; position:relative; z-index:1;}
+  .step-dot{
+    width:38px; height:38px; border-radius:50%; background:#fff; border:1.5px solid var(--blue);
+    display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:13px; color:var(--blue); font-weight:500;
+    margin-bottom:16px;
+  }
+  .step h4{font-size:14.5px; color:var(--navy); margin-bottom:6px; font-family:var(--display); font-weight:600;}
+  .step p{font-size:13px; color:var(--slate); line-height:1.5;}
+
+  /* Audiences */
+  .audience-grid{display:grid; grid-template-columns:1fr 1fr; gap:28px;}
+  .audience-card{
+    border:1px solid var(--line); padding:36px; position:relative;
+    transition:border-color .15s ease;
+  }
+  .audience-card:hover{border-color:var(--blue);}
+  .audience-card .eyebrow{margin-bottom:16px;}
+  .audience-card h3{font-size:22px; margin-bottom:12px;}
+  .audience-card p{color:var(--slate); font-size:15px; margin-bottom:20px;}
+  .audience-card ul{list-style:none; margin-bottom:26px;}
+  .audience-card li{
+    font-size:14.5px; color:var(--charcoal); padding:9px 0; border-top:1px solid var(--line);
+    display:flex; gap:10px;
+  }
+  .audience-card li::before{content:"—"; color:var(--copper); flex-shrink:0;}
+
+  /* Areas */
+  .areas{background:var(--navy); color:#fff;}
+  .areas .section-head h2{color:#fff;}
+  .areas .section-head p{color:rgba(255,255,255,0.68);}
+  .area-list{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.12);}
+  .area-item{background:rgba(255,255,255,0.03); padding:26px 22px;}
+  .area-item .coord{font-family:var(--mono); font-size:11px; color:var(--copper); margin-bottom:8px; display:block;}
+  .area-item h4{font-family:var(--display); font-size:18px; color:#fff; font-weight:600;}
+
+  /* Trust */
+  .trust-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:28px;}
+  .trust-item{text-align:left;}
+  .trust-item .num{font-family:var(--display); font-size:15px; color:var(--copper-dark); margin-bottom:10px; font-family:var(--mono);}
+  .trust-item h4{font-size:16px; color:var(--navy); margin-bottom:8px;}
+  .trust-item p{font-size:14px; color:var(--slate);}
+
+  /* Contact */
+  .contact{background:var(--pale);}
+  .contact-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px;}
+  .contact-info h2{font-size:clamp(24px,3vw,32px); margin:14px 0 18px;}
+  .contact-info p{color:var(--slate); margin-bottom:30px; max-width:38ch;}
+  .contact-line{display:flex; align-items:center; gap:14px; padding:16px 0; border-top:1px solid var(--line);}
+  .contact-line:last-of-type{border-bottom:1px solid var(--line);}
+  .contact-line .clabel{font-family:var(--mono); font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--slate); width:70px; flex-shrink:0;}
+  .contact-line a, .contact-line span{font-size:16px; color:var(--navy); font-weight:600;}
+  .contact-line a:hover{color:var(--copper-dark);}
+
+  form.lead-form{background:#fff; border:1px solid var(--line); padding:34px;}
+  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;}
+  .field{display:flex; flex-direction:column; gap:6px; margin-bottom:16px;}
+  .field label{font-family:var(--mono); font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:var(--slate);}
+  .field input, .field select, .field textarea{
+    border:1px solid var(--line); padding:11px 12px; font-family:var(--body); font-size:14.5px; color:var(--charcoal);
+    background:#fbfdfe; border-radius:var(--radius);
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{outline:2px solid var(--blue); outline-offset:1px;}
+  .field textarea{resize:vertical; min-height:90px;}
+  .form-note{font-size:12.5px; color:var(--slate); margin-top:14px;}
+  .form-success{display:none; background:#EFF7EF; border:1px solid #BFE0BF; color:#2C5E2C; padding:14px 16px; font-size:14px; margin-bottom:16px;}
+
+  footer{background:var(--navy); color:rgba(255,255,255,0.6); padding:44px 0 32px;}
+  .footer-inner{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:18px;}
+  .footer-inner .brand-name{color:#fff;}
+  .footer-links{display:flex; gap:26px; font-size:13.5px;}
+  .footer-links a:hover{color:#fff;}
+  .footer-bottom{margin-top:28px; padding-top:22px; border-top:1px solid rgba(255,255,255,0.1); font-size:12.5px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+
+  @media (max-width: 860px){
+    nav.links, .nav-phone{display:none;}
+    .menu-toggle{display:block;}
+    .hero-inner{grid-template-columns:1fr;}
+    .service-grid{grid-template-columns:1fr 1fr;}
+    .process-steps{grid-template-columns:repeat(3,1fr); row-gap:32px;}
+    .process-line{display:none;}
+    .audience-grid{grid-template-columns:1fr;}
+    .area-list{grid-template-columns:1fr 1fr;}
+    .trust-grid{grid-template-columns:1fr 1fr; row-gap:28px;}
+    .contact-grid{grid-template-columns:1fr;}
+    .form-row{grid-template-columns:1fr;}
+  }
+  @media (max-width: 520px){
+    .service-grid{grid-template-columns:1fr;}
+    .area-list{grid-template-columns:1fr;}
+    .trust-grid{grid-template-columns:1fr;}
+    .hero{padding:80px 0 60px;}
+    section{padding:64px 0;}
+  }
+  .mobile-cta-bar{display:none;}
+  @media (max-width: 860px){
+    .mobile-cta-bar{
+      display:flex; position:fixed; bottom:0; left:0; right:0; z-index:60;
+      background:var(--navy); border-top:1px solid rgba(255,255,255,0.14);
+    }
+    .mcta-btn{
+      flex:1; text-align:center; padding:14px 8px; font-size:13.5px; font-weight:600;
+      color:#fff; border-right:1px solid rgba(255,255,255,0.1);
+    }
+    .mcta-btn:last-child{border-right:none;}
+    .mcta-quote{background:var(--copper); color:#fff;}
+    body{padding-bottom:54px;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .btn:hover{transform:none;}
+  }
+</style>
+</head>
+<body id="top">
+
+<div class="mobile-cta-bar">
+  <a href="tel:3032042710" class="mcta-btn mcta-call">📞 Call</a>
+  <a href="mailto:imc2.connect@gmail.com" class="mcta-btn mcta-email">✉️ Email</a>
+  <a href="#contact" class="mcta-btn mcta-quote">Get a Quote</a>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <img src="logo.png" alt="Inspired Minds of Construction LLC logo" class="brand-logo">
+    </a>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#audiences">Who we serve</a>
+      <a href="#areas">Service areas</a>
+      <a href="blog/index.html">Field Notes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:3032042710">303-204-2710</a>
+      <a class="btn btn-primary" href="#contact">Get a consult</a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="blueprint-grid"></div>
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow">From concept to completion</span>
+      <h1>Every home repair project, planned and managed like a blueprint — not a guess.</h1>
+      <p class="lead">Inspired Minds of Construction LLC gives homeowners and contractors one point of accountability for inspections, estimates, project management, and quality assurance — start to finish.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Request a consultation</a>
+        <a href="#services" class="btn btn-outline">See what we do</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">7</div>
+          <div class="stat-label">Core services</div>
+        </div>
+        <div>
+          <div class="stat-num">4</div>
+          <div class="stat-label">Colorado service areas</div>
+        </div>
+        <div>
+          <div class="stat-num">2</div>
+          <div class="stat-label">Client tracks: homeowner &amp; contractor</div>
+        </div>
+      </div>
+    </div>
+    <div class="scope-card">
+      <div class="scope-row">
+        <div class="scope-tick">01</div>
+        <div class="scope-text"><b>Inspect</b> — document the property's actual condition before anyone spends a dollar.</div>
+      </div>
+      <div class="scope-row">
+        <div class="scope-tick">02</div>
+        <div class="scope-text"><b>Estimate</b> — a real repair-cost baseline, not a contractor's opening offer.</div>
+      </div>
+      <div class="scope-row">
+        <div class="scope-tick">03</div>
+        <div class="scope-text"><b>Match</b> — vet and pair the project with a qualified, verified contractor.</div>
+      </div>
+      <div class="scope-row">
+        <div class="scope-tick">04</div>
+        <div class="scope-text"><b>Manage</b> — oversee schedule, scope, and budget through completion.</div>
+      </div>
+      <div class="scope-row">
+        <div class="scope-tick">05</div>
+        <div class="scope-text"><b>Audit &amp; QA</b> — sign off only once the work meets spec.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What we do</span>
+      <h2>Full-scope consulting, not a single referral.</h2>
+      <p>Every service below can stand alone or roll into a single managed engagement — whichever the project needs.</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card">
+        <span class="service-idx">01</span>
+        <h3>Home Inspections</h3>
+        <p>Independent, detailed condition reports homeowners and contractors can both build a plan around.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-idx">02</span>
+        <h3>Repair Estimates</h3>
+        <p>Realistic, itemized cost baselines that make it possible to compare contractor bids apples-to-apples.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-idx">03</span>
+        <h3>Project Management</h3>
+        <p>Day-to-day oversight of schedule, scope, and budget so nothing drifts once work begins.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-idx">04</span>
+        <h3>Contractor Vetting &amp; Matching</h3>
+        <p>Screened, qualified contractors matched to the specific trade and scale of your project.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-idx">05</span>
+        <h3>General Contracting</h3>
+        <p>Direct contracting services for projects Inspired Minds takes on and delivers end to end.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-idx">06</span>
+        <h3>Project Audits</h3>
+        <p>Mid-project or post-completion review to confirm work matches scope, spec, and code.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-idx">07</span>
+        <h3>Quality Assurance</h3>
+        <p>Final sign-off inspections that protect homeowners before final payment is released.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How an engagement runs</span>
+      <h2>One sequence, whether you're the homeowner or the contractor.</h2>
+    </div>
+    <div class="process-track">
+      <div class="process-line"></div>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-dot">01</div>
+          <h4>Inspect</h4>
+          <p>On-site assessment of the property's real condition.</p>
+        </div>
+        <div class="step">
+          <div class="step-dot">02</div>
+          <h4>Estimate</h4>
+          <p>Itemized repair cost baseline, trade by trade.</p>
+        </div>
+        <div class="step">
+          <div class="step-dot">03</div>
+          <h4>Match</h4>
+          <p>Vetted contractor paired to the project's scope.</p>
+        </div>
+        <div class="step">
+          <div class="step-dot">04</div>
+          <h4>Manage</h4>
+          <p>Active oversight of schedule, budget, and scope.</p>
+        </div>
+        <div class="step">
+          <div class="step-dot">05</div>
+          <h4>Audit</h4>
+          <p>Independent review of completed work against spec.</p>
+        </div>
+        <div class="step">
+          <div class="step-dot">06</div>
+          <h4>Sign-off</h4>
+          <p>Final quality assurance before project close.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="audiences">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Who we serve</span>
+      <h2>Built for both sides of the project.</h2>
+      <p>Homeowners and contractors need different things from a consultant — Inspired Minds runs both tracks under one roof.</p>
+    </div>
+    <div class="audience-grid">
+      <div class="audience-card">
+        <span class="eyebrow">For homeowners</span>
+        <h3>Know what you're paying for, before you pay for it.</h3>
+        <p>An independent inspection and estimate first, then a vetted contractor and someone watching the project on your behalf.</p>
+        <ul>
+          <li>Pre-purchase and pre-repair inspections</li>
+          <li>Itemized, contractor-independent estimates</li>
+          <li>Vetted contractor matching for your specific repair</li>
+          <li>Ongoing project management through completion</li>
+          <li>Final quality assurance sign-off before you pay in full</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline-navy">Start a homeowner consult</a>
+      </div>
+      <div class="audience-card">
+        <span class="eyebrow">For contractors</span>
+        <h3>Qualified leads and cleaner project scopes.</h3>
+        <p>Get matched to projects that fit your trade and capacity, with scope and estimates already defined before you bid.</p>
+        <ul>
+          <li>Pre-scoped, pre-estimated project leads</li>
+          <li>Project audit support to document completed work</li>
+          <li>Third-party QA that protects you as much as the client</li>
+          <li>Overflow project management for larger jobs</li>
+          <li>A consulting partner, not a middleman markup</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline-navy">Partner with us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="areas" id="areas">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Where we work</span>
+      <h2>Serving the South Denver metro.</h2>
+      <p>Based locally and focused on four communities we know well.</p>
+    </div>
+    <div class="area-list">
+      <div class="area-item"><span class="coord">CO</span><h4>Parker</h4></div>
+      <div class="area-item"><span class="coord">CO</span><h4>Highlands Ranch</h4></div>
+      <div class="area-item"><span class="coord">CO</span><h4>Littleton</h4></div>
+      <div class="area-item"><span class="coord">CO</span><h4>Lone Tree</h4></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Why Inspired Minds</span>
+      <h2>One consultant accountable for the whole project.</h2>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="num">/01</div>
+        <h4>Independent from day one</h4>
+        <p>Inspections and estimates come before any contractor is chosen — never after.</p>
+      </div>
+      <div class="trust-item">
+        <div class="num">/02</div>
+        <h4>Vetted, not just listed</h4>
+        <p>Contractors are screened for the specific trade and scale of your repair.</p>
+      </div>
+      <div class="trust-item">
+        <div class="num">/03</div>
+        <h4>Managed through completion</h4>
+        <p>Active oversight of schedule, scope, and budget — not a one-time referral.</p>
+      </div>
+      <div class="trust-item">
+        <div class="num">/04</div>
+        <h4>Verified before sign-off</h4>
+        <p>A final audit and QA pass before the project — and the payment — closes out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Tell us about the property.</h2>
+      <p>Reach out directly, or send project details through the form and we'll follow up to schedule a consultation.</p>
+      <div class="contact-line">
+        <span class="clabel">Phone</span>
+        <a href="tel:3032042710">303-204-2710</a>
+      </div>
+      <div class="contact-line">
+        <span class="clabel">Email</span>
+        <a href="mailto:imc2.connect@gmail.com">imc2.connect@gmail.com</a>
+      </div>
+      <div class="contact-line">
+        <span class="clabel">Areas</span>
+        <span>Parker · Highlands Ranch · Littleton · Lone Tree, CO</span>
+      </div>
+    </div>
+
+    <form class="lead-form" id="leadForm">
+      <div class="form-success" id="formSuccess">Thanks — your default email app should have opened with these details pre-filled. Send it and we'll follow up shortly.</div>
+      <div class="form-row">
+        <div class="field">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" required>
+        </div>
+        <div class="field">
+          <label for="fphone">Phone</label>
+          <input type="tel" id="fphone">
+        </div>
+      </div>
+      <div class="field">
+        <label for="femail">Email</label>
+        <input type="email" id="femail" required>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="frole">I am a...</label>
+          <select id="frole">
+            <option>Homeowner</option>
+            <option>Contractor</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fservice">Service needed</label>
+          <select id="fservice">
+            <option>Home inspection</option>
+            <option>Repair estimate</option>
+            <option>Project management</option>
+            <option>Contractor matching</option>
+            <option>General contracting</option>
+            <option>Project audit</option>
+            <option>Quality assurance</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="fmsg">Project details</label>
+        <textarea id="fmsg" placeholder="Address, property type, and what's going on..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send project details</button>
+      <p class="form-note">Submitting opens an email to imc2.connect@gmail.com with your details pre-filled — no information is stored or sent anywhere else.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <a href="#top" class="brand">
+        <img src="logo.png" alt="Inspired Minds of Construction LLC logo" class="brand-logo" style="height:40px;">
+      </a>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#areas">Service areas</a>
+        <a href="blog/index.html">Field Notes</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Inspired Minds of Construction LLC. All rights reserved.</span>
+      <span>Parker · Highlands Ranch · Littleton · Lone Tree, CO</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.getElementById('leadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = document.getElementById('fname').value;
+    const phone = document.getElementById('fphone').value;
+    const email = document.getElementById('femail').value;
+    const role = document.getElementById('frole').value;
+    const service = document.getElementById('fservice').value;
+    const msg = document.getElementById('fmsg').value;
+
+    const subject = encodeURIComponent(`New project inquiry — ${role}: ${service}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nI am a: ${role}\nService needed: ${service}\n\nProject details:\n${msg}`
+    );
+    window.location.href = `mailto:imc2.connect@gmail.com?subject=${subject}&body=${body}`;
+
+    const success = document.getElementById('formSuccess');
+    success.style.display = 'block';
+  });
+
+  // Mobile menu toggle (simple show/hide of nav links)
+  const toggle = document.querySelector('.menu-toggle');
+  const links = document.querySelector('nav.links');
+  toggle.addEventListener('click', function(){
+    const isOpen = links.style.display === 'flex';
+    links.style.display = isOpen ? 'none' : 'flex';
+    links.style.flexDirection = 'column';
+    links.style.position = 'absolute';
+    links.style.top = '76px';
+    links.style.left = '0';
+    links.style.right = '0';
+    links.style.background = 'var(--navy)';
+    links.style.padding = '20px 24px';
+    links.style.gap = '18px';
+  });
+</script>
+
+</body>
+</html>
